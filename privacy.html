@@ -20,7 +20,7 @@
 
       <main class="doc">
         <h1>Informativa sulla privacy</h1>
-        <p class="updated">Aggiornata il 21 ottobre 2026 · vale per l'app Android, Windows, macOS e per la web app</p>
+        <p class="updated">Aggiornata il 22 ottobre 2026 · vale per l'app Android, Windows, macOS e per la web app</p>
 
         <p>
           In breve: <strong>Loss Musify non ha server che raccolgono i tuoi dati</strong>, non ha un database di
@@ -39,8 +39,7 @@
         <ul>
           <li><strong>Impostazioni</strong> (tema, qualità audio, equalizzatore e simili).</li>
           <li><strong>Cronologia di ascolto locale</strong>: quali brani hai ascoltato e per quanto, usata per le statistiche e i suggerimenti.</li>
-          <li><strong>Brani scaricati e cache</strong>: copie per l'ascolto offline, eliminabili dalle impostazioni.</li>
-          <li><strong>I tuoi file audio</strong>: l'app li legge dalle cartelle che scegli, non li sposta e non li carica da nessuna parte.</li>
+                    <li><strong>I tuoi file audio</strong>: l'app li legge dalle cartelle che scegli, non li sposta e non li carica da nessuna parte.</li>
           <li><strong>La sessione di accesso</strong>: il token che Google rilascia quando accedi, conservato solo sul dispositivo.</li>
         </ul>
         <p>Disinstallando l'app, o usando «Esci» e le voci di pulizia nelle impostazioni, questi dati vengono cancellati.</p>
@@ -48,29 +47,22 @@
         <h2>Accesso con Google</h2>
         <p>
           L'accesso è facoltativo: senza account la ricerca e la riproduzione funzionano comunque. Se accedi, lo fai
-          sulla pagina di Google, e Loss Musify riceve solo i permessi che vedi nella schermata di consenso. Li usa
-          per:
+          sulla pagina di Google, e Loss Musify riceve solo i permessi che vedi nella schermata di consenso:
         </p>
         <ul>
-          <li>riconoscerti: il tuo nome, la tua email e la tua foto, che l'app mostra a te e usa per distinguere i tuoi dispositivi;</li>
-          <li>tenere gli stessi «Mi piace», le stesse statistiche, gli stessi fissati e le stesse playlist importate su tutti i tuoi dispositivi (vedi sotto).</li>
+          <li>il tuo nome, la tua email e la tua foto, che l'app mostra a te e usa per distinguere i tuoi dispositivi;</li>
+          <li>una cartella privata nel tuo Google Drive riservata all'app, per i «Mi piace», le statistiche, i fissati e le playlist aggiunte (vedi sotto).</li>
         </ul>
         <p>
-          Loss Musify <strong>non</strong> chiede accesso al tuo account YouTube: non legge né modifica le tue playlist,
-          le tue iscrizioni o i «Mi piace» che hai su YouTube. I «Mi piace» di Loss Musify sono i suoi, e restano nel
-          file di sincronizzazione. Per portare dentro i tuoi dati di YouTube puoi usare l'import da Google Takeout
-          (vedi sotto).
-        </p>
-        <p>
-          I dati di accesso non passano mai da server di Loss Musify, perché non ne esistono. Puoi revocare
-          l'accesso in qualsiasi momento da
-          <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+          Loss Musify non chiede accesso ai tuoi file di Drive né a YouTube o ad altri servizi Google. I dati di
+          accesso non passano mai da server di Loss Musify, perché non ne esistono. Puoi revocare l'accesso in
+          qualsiasi momento da <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
         </p>
 
         <h2>Sincronizzazione tra i tuoi dispositivi</h2>
         <p>
-          Per avere gli stessi «Mi piace», le stesse statistiche, gli stessi fissati e le stesse playlist importate sul telefono e sul
-          computer, Loss Musify salva un piccolo file nello <strong>spazio riservato alle app del tuo Google Drive</strong>
+          Per avere gli stessi «Mi piace», le stesse statistiche, gli stessi fissati e le stesse playlist sul telefono e
+          sul computer, Loss Musify salva un piccolo file nello <strong>spazio riservato alle app del tuo Google Drive</strong>
           (la cartella nascosta «appDataFolder»). Quel file è visibile solo a Loss Musify con il tuo account, non
           compare tra i tuoi documenti e non è accessibile a noi. Puoi cancellarlo da Google Drive → Impostazioni →
           Gestisci app → Loss Musify → «Elimina dati app nascosti».
@@ -84,17 +76,22 @@
         </p>
 
         <h2>Servizi esterni che l'app contatta</h2>
+        <p>
+          Loss Musify non ha musica propria: la prende da fonti che la offrono per l'ascolto gratuito. Quando cerchi o
+          ascolti, l'app chiede a queste fonti ciò che ti serve, e loro vedono il tuo indirizzo IP e ciò che cerchi.
+        </p>
         <ul>
-          <li><strong>YouTube / Google</strong>: per cercare, leggere i cataloghi e riprodurre l'audio, e per l'accesso. Valgono la <a href="https://policies.google.com/privacy">privacy di Google</a> e i <a href="https://www.youtube.com/t/terms">termini di YouTube</a>.</li>
-          <li><strong>Spotify</strong>: solo se importi un album o un brano di Spotify, o una playlist copiata da Spotify. Nessuno accede a Spotify: il servizio Cloudflare qui sotto legge il catalogo pubblico con le credenziali dell'app, e l'app riceve solo titoli, artisti, durate e copertine.</li>
-          <li><strong>Google Takeout</strong>: è il servizio con cui scarichi tu i tuoi dati di YouTube. L'app legge i file che le dai e chiede a YouTube (oEmbed) titolo e canale di ciascun video.</li>
+          <li><strong>Radio via internet</strong>: l'elenco delle stazioni viene da <a href="https://www.radio-browser.info">radio-browser.info</a>, un archivio libero; il flusso audio arriva direttamente dalla radio che ascolti, che ne è titolare.</li>
+          <li><strong>Jamendo</strong> (jamendo.com): musica di artisti indipendenti, offerta con licenze per l'ascolto gratuito.</li>
+          <li><strong>Audius</strong> (audius.co): musica caricata dagli artisti stessi.</li>
+          <li><strong>Internet Archive</strong> (archive.org): le sue raccolte di concerti dal vivo e di etichette indipendenti, pubblicate con il permesso degli autori.</li>
           <li><strong>LRCLIB</strong> (lrclib.net): per cercare il testo del brano in ascolto, inviando titolo e artista.</li>
-          <li><strong>GitHub</strong>: ospita questa pagina, i download e due file che l'app legge da qui: l'avviso di nuove versioni e le tabelle per decodificare il player di YouTube. Se cerchi un profilo per le tue cuffie nell'equalizzatore, lo scarica dal progetto AutoEq su GitHub. GitHub vede l'indirizzo IP di chi si collega.</li>
+          <li><strong>Google</strong>: solo per l'accesso e la sincronizzazione descritti sopra.</li>
+          <li><strong>GitHub</strong>: ospita questa pagina, i download, la web app e l'avviso di nuove versioni. Se cerchi un profilo per le tue cuffie nell'equalizzatore, lo scarica dal progetto AutoEq su GitHub. GitHub vede l'indirizzo IP di chi si collega.</li>
           <li><strong>Last.fm e ListenBrainz</strong>: solo se li colleghi tu nelle impostazioni, per registrare lì i brani che ascolti.</li>
-          <li><strong>Servizio Cloudflare di Loss Musify</strong> (lossmusify-relay.federico-granati16.workers.dev): usato dalla web app per parlare con YouTube, e da tutte le app per leggere il catalogo pubblico di Spotify. Riceve ciò che cerchi o importi, non ti identifica, non conserva nulla e non lega le richieste al tuo account.</li>
         </ul>
+        <p>Nessun altro servizio viene contattato: nessun server di Loss Musify, nessuna pubblicità, nessuna intelligenza artificiale, nessun ascolto condiviso via internet (Unisono funziona sulla tua rete locale).</p>
 
-        <p>Nessun altro servizio viene contattato: niente server di terze parti per audio, testi, copertine animate, intelligenza artificiale o ascolto condiviso (Unisono funziona sulla tua rete locale).</p>
         <h2>Cosa non facciamo</h2>
         <ul>
           <li>Nessuna pubblicità, nessun profilo pubblicitario, nessuna vendita di dati.</li>

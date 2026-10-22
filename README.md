@@ -1,8 +1,8 @@
 # Loss Musify
 
-Lettore musicale gratuito e open source per la musica di YouTube e per i propri file audio:
-solo l'audio, alla qualità più alta che YouTube offre, con la stessa interfaccia su Android,
-Windows, macOS e (come web app) iPhone e iPad.
+Lettore musicale gratuito e open source: radio da tutto il mondo, musica libera (Jamendo,
+Audius, Internet Archive) e i propri file audio, senza pubblicità e anche a schermo spento, con la
+stessa interfaccia su Android, Windows, macOS e (come web app) iPhone e iPad.
 
 **Scarica:** https://federicogranati.github.io/LossMusify-releases/
 · [Tutte le versioni](https://github.com/federicogranati/LossMusify-releases/releases)
@@ -19,11 +19,10 @@ Windows, macOS e (come web app) iPhone e iPad.
 
 ## In breve, cosa sapere
 
-- Loss Musify è un progetto indipendente: non è affiliato né approvato da YouTube, Google o
-  Spotify, e non ospita alcun contenuto.
-- Riproduce solo la traccia audio dei video, senza pubblicità: i Termini di YouTube riservano
-  la riproduzione ai lettori ufficiali, quindi l'uso può non essere conforme a quei termini.
-  Leggi le [note legali](legal.html).
+- Loss Musify è un progetto indipendente: non è affiliato né approvato dalle fonti da cui
+  prende la musica e non ospita alcun contenuto.
+- Usa solo fonti che offrono la musica per l'ascolto gratuito (radio in chiaro, Jamendo, Audius,
+  Internet Archive) e non aggira pubblicità né protezioni. Leggi le [note legali](legal.html).
 - Nessun server di Loss Musify raccoglie dati: niente pubblicità, niente analisi d'uso. I dati
   restano sul dispositivo e nel tuo account Google. Leggi l'[informativa](privacy.html).
 
