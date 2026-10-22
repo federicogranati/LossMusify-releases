@@ -1,5 +1,5 @@
 // Loss Musify Service Worker (v8 - Network-First for core code, offline fallback)
-const VERSION = 'lossmusify-mvjit401';
+const VERSION = 'lossmusify-mvjmbu2l';
 const SHELL = [
   './',
   'index.html',
