@@ -52,9 +52,15 @@
           per:
         </p>
         <ul>
-          <li>leggere e aggiornare i tuoi «Mi piace», le playlist e le iscrizioni su YouTube;</li>
-          <li>tenere le stesse statistiche, i fissati e le playlist importate su tutti i tuoi dispositivi (vedi sotto).</li>
+          <li>riconoscerti: il tuo nome, la tua email e la tua foto, che l'app mostra a te e usa per distinguere i tuoi dispositivi;</li>
+          <li>tenere gli stessi «Mi piace», le stesse statistiche, gli stessi fissati e le stesse playlist importate su tutti i tuoi dispositivi (vedi sotto).</li>
         </ul>
+        <p>
+          Loss Musify <strong>non</strong> chiede accesso al tuo account YouTube: non legge né modifica le tue playlist,
+          le tue iscrizioni o i «Mi piace» che hai su YouTube. I «Mi piace» di Loss Musify sono i suoi, e restano nel
+          file di sincronizzazione. Per portare dentro i tuoi dati di YouTube puoi usare l'import da Google Takeout
+          (vedi sotto).
+        </p>
         <p>
           I dati di accesso non passano mai da server di Loss Musify, perché non ne esistono. Puoi revocare
           l'accesso in qualsiasi momento da
@@ -63,7 +69,7 @@
 
         <h2>Sincronizzazione tra i tuoi dispositivi</h2>
         <p>
-          Per avere le stesse statistiche, gli stessi fissati e le stesse playlist importate sul telefono e sul
+          Per avere gli stessi «Mi piace», le stesse statistiche, gli stessi fissati e le stesse playlist importate sul telefono e sul
           computer, Loss Musify salva un piccolo file nello <strong>spazio riservato alle app del tuo Google Drive</strong>
           (la cartella nascosta «appDataFolder»). Quel file è visibile solo a Loss Musify con il tuo account, non
           compare tra i tuoi documenti e non è accessibile a noi. Puoi cancellarlo da Google Drive → Impostazioni →
@@ -80,11 +86,12 @@
         <h2>Servizi esterni che l'app contatta</h2>
         <ul>
           <li><strong>YouTube / Google</strong>: per cercare, leggere i cataloghi e riprodurre l'audio, e per l'accesso. Valgono la <a href="https://policies.google.com/privacy">privacy di Google</a> e i <a href="https://www.youtube.com/t/terms">termini di YouTube</a>.</li>
-          <li><strong>Spotify</strong>: solo se scegli di importare. Accedi sulla pagina di Spotify e l'app legge, tramite l'API ufficiale, le tue playlist, i brani che ti piacciono e gli album o le playlist che indichi: solo titoli, artisti e durate. Vale la <a href="https://www.spotify.com/it/legal/privacy-policy/">privacy di Spotify</a>.</li>
+          <li><strong>Spotify</strong>: solo se importi un album o un brano di Spotify, o una playlist copiata da Spotify. Nessuno accede a Spotify: il servizio Cloudflare qui sotto legge il catalogo pubblico con le credenziali dell'app, e l'app riceve solo titoli, artisti, durate e copertine.</li>
+          <li><strong>Google Takeout</strong>: è il servizio con cui scarichi tu i tuoi dati di YouTube. L'app legge i file che le dai e chiede a YouTube (oEmbed) titolo e canale di ciascun video.</li>
           <li><strong>LRCLIB</strong> (lrclib.net): per cercare il testo del brano in ascolto, inviando titolo e artista.</li>
           <li><strong>GitHub</strong>: ospita questa pagina, i download e due file che l'app legge da qui: l'avviso di nuove versioni e le tabelle per decodificare il player di YouTube. Se cerchi un profilo per le tue cuffie nell'equalizzatore, lo scarica dal progetto AutoEq su GitHub. GitHub vede l'indirizzo IP di chi si collega.</li>
           <li><strong>Last.fm e ListenBrainz</strong>: solo se li colleghi tu nelle impostazioni, per registrare lì i brani che ascolti.</li>
-          <li><strong>Web app</strong>: per funzionare nel browser usa un piccolo servizio Cloudflare che inoltra le richieste a YouTube; non registra cosa ascolti.</li>
+          <li><strong>Servizio Cloudflare di Loss Musify</strong> (lossmusify-relay.federico-granati16.workers.dev): usato dalla web app per parlare con YouTube, e da tutte le app per leggere il catalogo pubblico di Spotify. Riceve ciò che cerchi o importi, non ti identifica, non conserva nulla e non lega le richieste al tuo account.</li>
         </ul>
 
         <p>Nessun altro servizio viene contattato: niente server di terze parti per audio, testi, copertine animate, intelligenza artificiale o ascolto condiviso (Unisono funziona sulla tua rete locale).</p>

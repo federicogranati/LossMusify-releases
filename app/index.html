@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Loss Musify</title>
+    <meta name="description" content="Tutta la musica di YouTube. Solo l'audio, alla qualità più alta, senza pubblicità." />
+
+    <!-- PWA & Favicons -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#121110" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Loss Musify" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+
+    <!-- Google Identity Services (Google Sign-In) -->
+    <meta name="google-signin-client_id" content="784101541845-ek0fbu87g67jufeaijij3iektp9rckqr.apps.googleusercontent.com" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- Google Cast SDK -->
+    <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+
+    <!-- YouTube IFrame API (Audio Engine, 0-Video) -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <link rel="stylesheet" href="styles.css?v=mvjbdh7q" />
+  </head>
+  <body>
+    <!-- Hidden Pure Audio Engine Dock (Zero video frames visible) -->
+    <div id="yt-web-dock" style="position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden;"><div id="yt-web-engine"></div></div>
+
+    <script type="module" src="app.js?v=mvjbdh7q"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js?v=mvjbdh7q').then((reg) => {
+            reg.update().catch(() => {});
+          }).catch(() => {});
+        });
+      }
+    </script>
+
+  </body>
+</html>
