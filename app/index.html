@@ -23,16 +23,16 @@
     <!-- Google Cast SDK -->
     <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
 
-    <link rel="stylesheet" href="styles.css?v=mvjmbu2l" />
+    <link rel="stylesheet" href="styles.css?v=mvjnlvjh" />
   </head>
   <body>
     <div id="yt-web-dock" style="position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden;"><div id="yt-web-engine"></div></div>
 
-    <script type="module" src="app.js?v=mvjmbu2l"></script>
+    <script type="module" src="app.js?v=mvjnlvjh"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('sw.js?v=mvjmbu2l').then((reg) => {
+          navigator.serviceWorker.register('sw.js?v=mvjnlvjh').then((reg) => {
             reg.update().catch(() => {});
           }).catch(() => {});
         });
